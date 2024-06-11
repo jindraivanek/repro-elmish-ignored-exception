@@ -35,4 +35,9 @@ Program.mkProgram init update view
 |> Program.withConsoleTrace
 |> Program.run
 
+// wait for finish
+#if FABLE_COMPILER
 Async.Sleep 1000 |> Async.StartImmediate
+#else
+Async.Sleep 1000 |> Async.RunSynchronously
+#endif

@@ -2,8 +2,7 @@
 
 ```
 cd fable
-dotnet fable
-node ../Program.fs.js
+dotnet fable && node ../Program.fs.js
 ```
 
 ## .NET
